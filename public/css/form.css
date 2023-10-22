@@ -1,0 +1,141 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group-checkbox {
+    margin-bottom: 15px;
+}
+
+.form-group-actions {
+    margin-bottom: 15px;
+}
+
+.form-group > label,
+.form-group-checkbox > label {
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 0.5em;
+    color: darkcyan;
+    font-family: Barlow, sans-serif;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group textarea {
+    padding: 7px 10px;
+    border: 0 solid var(--theme-form-border);
+    border-radius: 4px;
+    font-size: 15px;
+    background-color: var(--theme-form-background);
+    transition: background-color 0.15s ease;
+    color: var(--theme-color);
+    font-family: Barlow, sans-serif;
+}
+
+.form-group select {
+    padding: 7px 8px;
+    border: 0 solid var(--theme-form-border);
+    border-radius: 4px;
+    background-color: var(--theme-form-background);
+    transition: background-color 0.15s ease;
+    color: var(--theme-color);
+    font-family: Barlow, sans-serif;
+}
+
+.form-group input[type="date"] {
+    font-family: Barlow, sans-serif;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+    font-family: Barlow, sans-serif;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="date"]:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border: none !important;
+}
+
+.form-group input[type="checkbox"] {
+    margin-top: 5px;
+}
+
+.form-hint {
+    color: #999;
+    font-size: 14px;
+}
+.btn {
+    font-size: 14px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-xl {
+    font-size: 15px;
+    padding: 7px 25px;
+    border: none;
+    border-radius: 7px;
+    cursor: default !important;
+}
+
+.btn-primary {
+    background-color: var(--theme-button-background);
+    transition: background-color 0.15s ease;
+    color: white;
+}
+
+.btn-success {
+    background-color: rgb(33, 167, 36);
+    color: white;
+}
+
+.btn-danger {
+    background-color: rgb(225, 18, 18);
+    color: white;
+}
+
+.btn-secondary {
+    background-color: rgb(110, 106, 106);
+    color: white;
+}
+
+.btn-order {
+    background-color: rgb(110, 106, 106, 20%);
+    color: var(--theme-button-color);
+}
+
+.btn-order.active {
+    background-color: rgb(110, 106, 106, 50%);
+    color: var(--theme-color);
+}
+.btn-order.active::after {
+    font-size: 0.7rem;
+}
+
+.btn-order.active.desc::after {
+    content: "▼";
+}
+
+.btn-order.active.asc::after {
+    content: "▲";
+}
+.btn:hover {
+    background-image: linear-gradient(rgb(0 0 0/15%) 0 0);
+}
+
+.submit-button {
+    margin-top: 15px;
+}

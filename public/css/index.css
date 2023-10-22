@@ -1,0 +1,153 @@
+@import "flexbox.css";
+@import "form.css";
+@import "table.css";
+@import "modal.css";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Barlow, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    padding: 30px;
+}
+
+body {
+    background-color: var(--theme-background);
+    transition: background-color 0.15s ease;
+    color: var(--theme-color);
+    margin: 0;
+}
+
+:root {
+    --theme-background: white;
+    --theme-color: #222;
+    --theme-button-color: #5d4b4b;
+    --theme-button-background: #055fd9;
+    --theme-form-background: #ece9e9;
+    --theme-form-border: #ccc;
+    --theme-divider-color: #ccc;
+    --theme-duedate-color: #242b41;
+    --theme-link-edit-color: #fff;
+    --theme-link-edit-color-hover: #e1eafc;
+    --theme-link-edit-background: #d9b9c2;
+    --theme-link-edit-background-hover: #7691f3;
+    --theme-link-edit-boxshadow: #e1b4b4;
+    --theme-link-delete-color: #fff;
+    --theme-link-delete-color-hover: #fff;
+    --theme-link-delete-background: #d9b9c2;
+    --theme-link-delete-background-hover: #fd0202;
+    --theme-link-delete-boxshadow: #e1b4b4;
+}
+
+.dark-theme {
+    --theme-background: #222231;
+    --theme-color: white;
+    --theme-button-color: #a18b8b;
+    --theme-button-background: #485d7a;
+    --theme-form-background: #3e3e59;
+    --theme-form-border: #485d7a;
+    --theme-divider-color: #485d7a;
+    --theme-duedate-color: #92acd0;
+    --theme-link-edit-color: #eff1f8;
+    --theme-link-edit-color-hover: #cdeac6;
+    --theme-link-edit-background: #2e3a59;
+    --theme-link-edit-background-hover: #7691f3;
+    --theme-link-edit-boxshadow: #28020e;
+    --theme-link-delete-color: #f8eff0;
+    --theme-link-delete-color-hover: #eac6ca;
+    --theme-link-delete-background: #a81424;
+    --theme-link-delete-background-hover: #9a071c;
+    --theme-link-delete-boxshadow: #28020e;
+}
+
+.app-container {
+    border-radius: 10px;
+}
+
+.headliner,
+.headliner h1 {
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+#tool-bar {
+    margin-bottom: 20px;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+}
+
+.items .todo {
+    background-color: cornflowerblue;
+}
+
+.items .todo .infos {
+    background-color: lightgreen;
+}
+
+.items .todo .actions {
+    background-color: lightcoral;
+}
+
+.theme-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.completed-icon {
+    margin-top: 2px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.completed-icon.completed-yes {
+    color: #10cc10;
+}
+
+.completed-icon.completed-not {
+    color: #f6e5e5;
+}
+
+.row-completed {
+    background-color: #edf3db !important;
+}
+
+.trenner {
+    height: 1px;
+    display: block;
+    background-color: var(--theme-divider-color);
+}
+
+.importance {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.sort-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.helper-order-text {
+    color: var(--theme-duedate-color);
+    font-size: 0.85em;
+    vertical-align: middle;
+    margin-right: 5px;
+}

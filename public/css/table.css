@@ -1,0 +1,56 @@
+.table {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+.table > div {
+    margin: 0;
+    background: transparent;
+    padding: 0;
+}
+
+.table > div:nth-child(3n+2) {
+    background: transparent;
+}
+
+.table > div:nth-child(3n+3) {
+    background: transparent;
+}
+
+.items .table .due-date {
+    color: var(--theme-duedate-color);
+    font-size: 0.85em;
+    vertical-align: top;
+}
+
+a.linkbutton {
+    font-size: 0.65em;
+    padding: 2px 6px 3px 6px;
+    text-decoration: none;
+    vertical-align: center;
+    border-radius: 10px;
+    text-transform: uppercase;
+    margin-right: 1px;
+}
+
+a.linkbutton.edit {
+    color: var(--theme-link-edit-color);
+    background-color: var(--theme-link-edit-background);
+}
+
+a.linkbutton.edit:hover {
+    color: var(--theme-link-edit-color-hover);
+    background-color: var(--theme-link-edit-background-hover);
+    box-shadow: 1px 2px 5px var(--theme-link-edit-boxshadow);
+}
+
+a.linkbutton.delete {
+    color: var(--theme-link-delete-color);
+    background-color: var(--theme-link-delete-background);
+}
+
+a.linkbutton.delete:hover {
+    color: var(--theme-link-delete-color-hover);
+    background-color: var(--theme-link-delete-background-hover);
+    box-shadow: 1px 2px 5px var(--theme-link-delete-boxshadow);
+}
