@@ -16,7 +16,9 @@ Focus on the real thing let the things holding you off behind.
 
 ## Clone repo
 
+```bash
 git clone https://github.com/almirhodzic/Notiz-App
+```
 
 ## Run Locally
 
